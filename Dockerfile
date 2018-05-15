@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM continuumio/miniconda
 
 RUN apt-get update && apt-get install -y wget && apt-get install -y procps
 RUN echo 'deb http://deb.debian.org/debian jessie main' >> /etc/apt/sources.list
