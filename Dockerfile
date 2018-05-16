@@ -14,4 +14,4 @@ RUN dpkg -i irods-auth-plugin-krb-1.4-ubuntu14-x86_64.deb
 RUN DEFAULT_USER="ubuntu"
 
 ADD .irods /root/.irods
-ADD iinit.sh iinit.sh
+COPY ./iinit.sh /iinit.sh
